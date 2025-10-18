@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
     By usernameField = By.id("username");
     By passwordField = By.id("password");
-    By loginBtn = By.cssSelector("login button");
+    By loginBtn = By.xpath("//button[@type=\"submit\"]");
     WebDriver driver;
     public LoginPage(WebDriver driver) {
         this.driver = driver;
