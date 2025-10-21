@@ -9,7 +9,7 @@ import static org.testng.Assert.assertTrue;
 public class DropdownTests extends BaseTests {
     @Test
     public void testSelectedOption() {
-        var dropDownPage = homePage.clickDroopDown();
+        var dropDownPage = homePage.clickDropDown();
         String option = "Option 1";
         dropDownPage.selectFromDropDown(option);
         var selectedOptions = dropDownPage.getSelectedOptions();
